@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#0f1117">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ميزانيتي">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj4KICA8cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjQwIiBmaWxsPSIjMGYxMTE3Ii8+CiAgPHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHJ4PSI0MCIgZmlsbD0idXJsKCNiZykiLz4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjE5MiIgeTI9IjE5MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWExZDI3Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIyMjYzYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iY29pbiIgeDE9IjYwIiB5MT0iNTAiIHgyPSIxMzIiIHkyPSIxNDIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZjNjNmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjY1ODQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDwhLS0gQ29pbiBjaXJjbGUgLS0+CiAgPGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iNTUiIGZpbGw9InVybCgjY29pbikiIG9wYWNpdHk9IjAuMTUiLz4KICA8Y2lyY2xlIGN4PSI5NiIgY3k9Ijk2IiByPSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2NvaW4pIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8IS0tIERaIHN5bWJvbCAtLT4KICA8dGV4dCB4PSI5NiIgeT0iMTEyIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ1cmwoI2NvaW4pIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7Yr9isPC90ZXh0Pgo8L3N2Zz4=">
+<link rel="manifest" href="data:application/json,%7B%0A%20%20%22name%22%3A%20%22%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%AA%D9%8A%22%2C%0A%20%20%22short_name%22%3A%20%22%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%AA%D9%8A%22%2C%0A%20%20%22start_url%22%3A%20%22.%22%2C%0A%20%20%22display%22%3A%20%22standalone%22%2C%0A%20%20%22background_color%22%3A%20%22%230f1117%22%2C%0A%20%20%22theme_color%22%3A%20%22%236c63ff%22%2C%0A%20%20%22icons%22%3A%20%5B%0A%20%20%20%20%7B%22src%22%3A%20%22data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj4KICA8cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjQwIiBmaWxsPSIjMGYxMTE3Ii8%2BCiAgPHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHJ4PSI0MCIgZmlsbD0idXJsKCNiZykiLz4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjE5MiIgeTI9IjE5MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWExZDI3Ii8%2BCiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIyMjYzYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iY29pbiIgeDE9IjYwIiB5MT0iNTAiIHgyPSIxMzIiIHkyPSIxNDIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZjNjNmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjY1ODQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ%2BCiAgPC9kZWZzPgogIDwhLS0gQ29pbiBjaXJjbGUgLS0%2BCiAgPGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iNTUiIGZpbGw9InVybCgjY29pbikiIG9wYWNpdHk9IjAuMTUiLz4KICA8Y2lyY2xlIGN4PSI5NiIgY3k9Ijk2IiByPSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2NvaW4pIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8IS0tIERaIHN5bWJvbCAtLT4KICA8dGV4dCB4PSI5NiIgeT0iMTEyIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ1cmwoI2NvaW4pIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7Yr9isPC90ZXh0Pgo8L3N2Zz4%3D%22%2C%20%22sizes%22%3A%20%22192x192%22%2C%20%22type%22%3A%20%22image%2Fsvg%2Bxml%22%7D%2C%0A%20%20%20%20%7B%22src%22%3A%20%22data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj4KICA8cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjQwIiBmaWxsPSIjMGYxMTE3Ii8%2BCiAgPHJlY3Qgd2lkdGg9IjE5MiIgaGVpZ2h0PSIxOTIiIHJ4PSI0MCIgZmlsbD0idXJsKCNiZykiLz4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjE5MiIgeTI9IjE5MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMWExZDI3Ii8%2BCiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzIyMjYzYSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iY29pbiIgeDE9IjYwIiB5MT0iNTAiIHgyPSIxMzIiIHkyPSIxNDIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZjNjNmZiIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZjY1ODQiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ%2BCiAgPC9kZWZzPgogIDwhLS0gQ29pbiBjaXJjbGUgLS0%2BCiAgPGNpcmNsZSBjeD0iOTYiIGN5PSI5NiIgcj0iNTUiIGZpbGw9InVybCgjY29pbikiIG9wYWNpdHk9IjAuMTUiLz4KICA8Y2lyY2xlIGN4PSI5NiIgY3k9Ijk2IiByPSI1MCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2NvaW4pIiBzdHJva2Utd2lkdGg9IjQiLz4KICA8IS0tIERaIHN5bWJvbCAtLT4KICA8dGV4dCB4PSI5NiIgeT0iMTEyIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iNTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ1cmwoI2NvaW4pIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7Yr9isPC90ZXh0Pgo8L3N2Zz4%3D%22%2C%20%22sizes%22%3A%20%22512x512%22%2C%20%22type%22%3A%20%22image%2Fsvg%2Bxml%22%7D%0A%20%20%5D%0A%7D">
+<title>ميزانيتي</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #22263a;
+    --border: #2e3248;
+    --text: #e8eaf6;
+    --text-muted: #7b80a0;
+    --accent: #6c63ff;
+    --accent2: #ff6584;
+    --green: #43e97b;
+    --yellow: #f9ca24;
+    --red: #ff4757;
+    --orange: #ff6b35;
+    --radius: 16px;
+    --radius-sm: 10px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Cairo', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 80px;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    background: linear-gradient(135deg, #1a1d27 0%, #22263a 100%);
+    padding: 20px 20px 0;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .app-title {
+    font-size: 22px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .month-badge {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 12px;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+
+  /* ===== NAV ===== */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    display: flex;
+    z-index: 200;
+  }
+
+  .nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    color: var(--text-muted);
+    font-size: 10px;
+    gap: 4px;
+    transition: color 0.2s;
+    border: none;
+    background: none;
+  }
+
+  .nav-item.active { color: var(--accent); }
+  .nav-item svg { width: 22px; height: 22px; }
+
+  /* ===== PAGES ===== */
+  .page { display: none; padding: 16px; }
+  .page.active { display: block; }
+
+  /* ===== SUMMARY CARD ===== */
+  .summary-card {
+    background: linear-gradient(135deg, var(--accent) 0%, #8b5cf6 100%);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .summary-label { font-size: 12px; opacity: 0.8; margin-bottom: 4px; }
+  .summary-amount { font-size: 32px; font-weight: 900; }
+  .summary-unit { font-size: 14px; opacity: 0.8; }
+
+  .summary-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .summary-mini {
+    flex: 1;
+    background: rgba(0,0,0,0.2);
+    border-radius: var(--radius-sm);
+    padding: 10px;
+  }
+
+  .summary-mini .label { font-size: 11px; opacity: 0.8; }
+  .summary-mini .val { font-size: 16px; font-weight: 700; }
+  .summary-mini.spent .val { color: #ffb3c1; }
+  .summary-mini.left .val { color: #b3ffcc; }
+
+  /* ===== CATEGORY CARDS ===== */
+  .section-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+
+  .cat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+
+  .cat-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cat-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .cat-info { flex: 1; }
+  .cat-name { font-size: 14px; font-weight: 700; }
+  .cat-amounts { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+  .cat-left {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .progress-bar {
+    height: 6px;
+    background: var(--surface2);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.4s ease;
+  }
+
+  .warn-badge {
+    font-size: 10px;
+    background: rgba(255,71,87,0.2);
+    color: var(--red);
+    border-radius: 20px;
+    padding: 2px 8px;
+    margin-top: 6px;
+    display: inline-block;
+  }
+
+  /* ===== FAB ===== */
+  .fab {
+    position: fixed;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(108,99,255,0.4);
+    z-index: 150;
+    transition: transform 0.2s;
+  }
+  .fab:active { transform: translateX(-50%) scale(0.92); }
+
+  /* ===== MODAL ===== */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 300;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+
+  .modal {
+    background: var(--surface);
+    border-radius: 24px 24px 0 0;
+    padding: 24px 20px 36px;
+    width: 100%;
+    max-width: 480px;
+    animation: slideUp 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  @keyframes slideUp {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+  }
+
+  .modal-title {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .modal-handle {
+    width: 40px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 99px;
+    margin: 0 auto 20px;
+  }
+
+  /* ===== FORM ===== */
+  .form-group { margin-bottom: 16px; }
+  .form-label { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; display: block; }
+
+  .form-input, .form-select {
+    width: 100%;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+    direction: rtl;
+  }
+  .form-input:focus, .form-select:focus { border-color: var(--accent); }
+  .form-input::placeholder { color: var(--text-muted); }
+
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .cat-btn {
+    background: var(--surface2);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 10px 6px;
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  .cat-btn .icon { font-size: 20px; display: block; margin-bottom: 4px; }
+  .cat-btn.selected { border-color: var(--accent); background: rgba(108,99,255,0.15); color: var(--accent); }
+
+  .btn-primary {
+    width: 100%;
+    background: linear-gradient(135deg, var(--accent), #8b5cf6);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 14px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+
+  .btn-secondary {
+    width: 100%;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    color: var(--text-muted);
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+
+  /* ===== TRANSACTIONS ===== */
+  .tx-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .tx-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .tx-info { flex: 1; }
+  .tx-desc { font-size: 14px; font-weight: 600; }
+  .tx-meta { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .tx-amount { font-size: 16px; font-weight: 700; color: var(--accent2); }
+
+  .tx-delete {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 4px;
+    font-size: 16px;
+  }
+
+  .filter-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .filter-row::-webkit-scrollbar { display: none; }
+
+  .filter-chip {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    padding: 6px 14px;
+    font-size: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: var(--text-muted);
+    font-family: 'Cairo', sans-serif;
+  }
+  .filter-chip.active { background: rgba(108,99,255,0.2); border-color: var(--accent); color: var(--accent); }
+
+  /* ===== SETUP ===== */
+  .setup-overlay {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 500;
+    overflow-y: auto;
+    padding: 30px 20px 40px;
+    display: none;
+  }
+  .setup-overlay.show { display: block; }
+
+  .setup-logo {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .setup-logo .big { font-size: 50px; }
+  .setup-logo h1 {
+    font-size: 28px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .setup-logo p { color: var(--text-muted); font-size: 13px; margin-top: 4px; }
+
+  .setup-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+
+  .setup-section-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cat-setup-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .cat-setup-icon { font-size: 22px; width: 32px; text-align: center; flex-shrink: 0; }
+  .cat-setup-name { flex: 1; font-size: 13px; }
+
+  .cat-setup-input {
+    width: 100px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 10px;
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    outline: none;
+    direction: ltr;
+  }
+  .cat-setup-input:focus { border-color: var(--accent); }
+
+  .pct-display {
+    width: 42px;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .total-bar {
+    background: var(--surface2);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+  .total-bar .ok { color: var(--green); font-weight: 700; }
+  .total-bar .over { color: var(--red); font-weight: 700; }
+
+  /* ===== SETTINGS ===== */
+  .settings-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .settings-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border);
+  }
+  .settings-item:last-child { border-bottom: none; }
+
+  .settings-item-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+  .settings-item-info { flex: 1; }
+  .settings-item-title { font-size: 14px; font-weight: 600; }
+  .settings-item-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .settings-arrow { color: var(--text-muted); font-size: 12px; }
+
+  /* ===== TOAST ===== */
+  .toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-80px);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    padding: 10px 20px;
+    font-size: 13px;
+    z-index: 999;
+    transition: transform 0.3s ease;
+    white-space: nowrap;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+  .toast.show { transform: translateX(-50%) translateY(0); }
+  .toast.success { border-color: var(--green); color: var(--green); }
+  .toast.error { border-color: var(--red); color: var(--red); }
+
+  /* ===== EMPTY ===== */
+  .empty {
+    text-align: center;
+    padding: 50px 20px;
+    color: var(--text-muted);
+  }
+  .empty .icon { font-size: 50px; margin-bottom: 12px; }
+  .empty p { font-size: 14px; }
+
+  /* ===== REPORT ===== */
+  .report-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .report-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .report-row:last-child { border-bottom: none; }
+  .report-row .name { display: flex; align-items: center; gap: 8px; }
+  .report-row .spent { font-weight: 700; }
+  .report-row .ok { color: var(--green); }
+  .report-row .warn { color: var(--red); }
+</style>
+</head>
+<body>
+
+<!-- SETUP -->
+<div class="setup-overlay" id="setup">
+  <div class="setup-logo">
+    <div class="big">💰</div>
+    <h1>ميزانيتي</h1>
+    <p>سيّر راتبك بذكاء</p>
+  </div>
+
+  <div class="setup-section">
+    <div class="setup-section-title">🏦 الراتب الشهري</div>
+    <input class="form-input" id="salaryInput" type="number" placeholder="مثال: 45000" inputmode="numeric" oninput="onSalaryChange()">
+    <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">بالدينار الجزائري (دج)</div>
+  </div>
+
+  <div class="setup-section">
+    <div class="setup-section-title" style="justify-content:space-between;display:flex;align-items:center">
+      <span>📂 توزيع الفئات</span>
+      <span style="font-size:11px;color:var(--text-muted);font-weight:400">النسبة → المبلغ تلقائي</span>
+    </div>
+
+    <!-- رأس الجدول -->
+    <div style="display:grid;grid-template-columns:1fr 70px 90px;gap:6px;padding:0 2px 8px;border-bottom:1px solid var(--border);margin-bottom:8px">
+      <div style="font-size:11px;color:var(--text-muted)">الفئة</div>
+      <div style="font-size:11px;color:var(--text-muted);text-align:center">النسبة %</div>
+      <div style="font-size:11px;color:var(--text-muted);text-align:center">المبلغ (دج)</div>
+    </div>
+
+    <div id="catSetupList"></div>
+
+    <!-- مجموع النسب -->
+    <div class="total-bar" style="margin-top:10px">
+      <span style="font-size:13px">مجموع النسب</span>
+      <span id="pctTotal" class="ok">0%</span>
+    </div>
+    <div class="total-bar" style="margin-top:6px">
+      <span style="font-size:13px">المجموع المخصص</span>
+      <span id="setupTotal" class="ok">0 دج</span>
+    </div>
+    <div id="remainingBar" style="display:none" class="total-bar" style="margin-top:6px">
+      <span style="font-size:13px">⚡ غير مخصص</span>
+      <span id="remainingAmt" style="color:var(--yellow);font-weight:700">0 دج</span>
+    </div>
+  </div>
+
+  <button class="btn-primary" onclick="finishSetup()">ابدأ التتبع ✓</button>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-top">
+    <div class="app-title">ميزانيتي</div>
+    <div class="month-badge" id="monthBadge" onclick="showPage('stats')">يونيو 2025</div>
+  </div>
+  <div style="display:flex;gap:0">
+    <div style="height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));border-radius:99px;margin-bottom:0;flex:1"></div>
+  </div>
+</div>
+
+<!-- PAGES -->
+<div class="page active" id="page-home">
+  <div id="summaryCard"></div>
+  <div class="section-title">الفئات</div>
+  <div id="catList"></div>
+</div>
+
+<div class="page" id="page-txs">
+  <div class="filter-row" id="filterRow"></div>
+  <div id="txList"></div>
+</div>
+
+<div class="page" id="page-stats">
+  <div id="statsContent"></div>
+</div>
+
+<div class="page" id="page-settings">
+  <div class="settings-card">
+    <div class="settings-item" onclick="openEditSalary()">
+      <div class="settings-item-icon" style="background:rgba(108,99,255,0.15)">💰</div>
+      <div class="settings-item-info">
+        <div class="settings-item-title">تعديل الراتب</div>
+        <div class="settings-item-sub" id="currentSalaryLabel">—</div>
+      </div>
+      <div class="settings-arrow">‹</div>
+    </div>
+    <div class="settings-item" onclick="openEditCats()">
+      <div class="settings-item-icon" style="background:rgba(255,101,132,0.15)">📂</div>
+      <div class="settings-item-info">
+        <div class="settings-item-title">تعديل الفئات والميزانيات</div>
+        <div class="settings-item-sub">تغيير المبالغ المخصصة</div>
+      </div>
+      <div class="settings-arrow">‹</div>
+    </div>
+    <div class="settings-item" onclick="resetMonth()">
+      <div class="settings-item-icon" style="background:rgba(67,233,123,0.15)">🔄</div>
+      <div class="settings-item-info">
+        <div class="settings-item-title">إعادة تعيين الشهر</div>
+        <div class="settings-item-sub">حذف مصاريف الشهر مع الإبقاء على الإعدادات</div>
+      </div>
+      <div class="settings-arrow">‹</div>
+    </div>
+    <div class="settings-item" onclick="resetDefaultCats()">
+      <div class="settings-item-icon" style="background:rgba(249,202,36,0.15)">⚙️</div>
+      <div class="settings-item-info">
+        <div class="settings-item-title">إعادة ضبط الفئات للافتراضية</div>
+        <div class="settings-item-sub">استعادة الترتيب والنسب الأصلية</div>
+      </div>
+      <div class="settings-arrow">‹</div>
+    </div>
+    <div class="settings-item" onclick="clearAll()">
+      <div class="settings-item-icon" style="background:rgba(255,71,87,0.15)">🗑️</div>
+      <div class="settings-item-info">
+        <div class="settings-item-title">حذف كل البيانات</div>
+        <div class="settings-item-sub">إعادة ضبط التطبيق من البداية</div>
+      </div>
+      <div class="settings-arrow">‹</div>
+    </div>
+  </div>
+  <div style="text-align:center;color:var(--text-muted);font-size:12px;margin-top:20px">ميزانيتي • داحو & Timber</div>
+</div>
+
+<!-- FAB -->
+<button class="fab" id="fab" onclick="openAddTx()">+</button>
+
+<!-- BOTTOM NAV -->
+<div class="bottom-nav">
+  <button class="nav-item active" id="nav-home" onclick="showPage('home')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    الرئيسية
+  </button>
+  <button class="nav-item" id="nav-txs" onclick="showPage('txs')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+    المصاريف
+  </button>
+  <button class="nav-item" id="nav-stats" onclick="showPage('stats')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+    التقرير
+  </button>
+  <button class="nav-item" id="nav-settings" onclick="showPage('settings')">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+    الإعدادات
+  </button>
+</div>
+
+<!-- ADD TX MODAL -->
+<div class="modal-overlay" id="addTxModal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title">➕ تسجيل مصروف</div>
+    <div class="form-group">
+      <label class="form-label">الفئة</label>
+      <div class="cat-grid" id="catBtns"></div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">المبلغ (دج)</label>
+      <input class="form-input" id="txAmount" type="number" placeholder="0" inputmode="numeric">
+    </div>
+    <div class="form-group">
+      <label class="form-label">الوصف (اختياري)</label>
+      <input class="form-input" id="txDesc" type="text" placeholder="مثال: سوق الأسبوع">
+    </div>
+    <div class="form-group">
+      <label class="form-label">التاريخ</label>
+      <input class="form-input" id="txDate" type="date">
+    </div>
+    <button class="btn-primary" onclick="saveTx()">حفظ المصروف</button>
+    <button class="btn-secondary" onclick="closeModal('addTxModal')">إلغاء</button>
+  </div>
+</div>
+
+<!-- EDIT SALARY MODAL -->
+<div class="modal-overlay" id="editSalaryModal">
+  <div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title">💰 تعديل الراتب</div>
+    <div class="form-group">
+      <label class="form-label">الراتب الشهري (دج)</label>
+      <input class="form-input" id="editSalaryInput" type="number" inputmode="numeric">
+    </div>
+    <button class="btn-primary" onclick="saveEditSalary()">حفظ</button>
+    <button class="btn-secondary" onclick="closeModal('editSalaryModal')">إلغاء</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script>
+// ===== DATA =====
+const DEFAULT_CATS = [
+  { id: 'food',       name: 'أكل ومشتريات',    icon: '🛒', color: '#43e97b', pct: 30 },
+  { id: 'housing',    name: 'فواتير',           icon: '🏠', color: '#6c63ff', pct: 20 },
+  { id: 'transport',  name: 'مواصلات',          icon: '🚗', color: '#f9ca24', pct: 5  },
+  { id: 'health',     name: 'صحة',              icon: '🏥', color: '#ff6584', pct: 5  },
+  { id: 'clothes',    name: 'ملابس',            icon: '👕', color: '#ff6b35', pct: 10 },
+  { id: 'education',  name: 'تعليم وتطوير',    icon: '📚', color: '#a29bfe', pct: 10 },
+  { id: 'fun',        name: 'ترفيه واجتماعيات', icon: '🎉', color: '#fd79a8', pct: 10 },
+  { id: 'savings',    name: 'توفير وطوارئ',    icon: '💰', color: '#00b894', pct: 10 },
+];
+
+let state = {
+  salary: 0,
+  categories: [],
+  transactions: [],
+  setup: false
+};
+
+function load() {
+  const s = localStorage.getItem('mizan_v2');
+  if (s) state = JSON.parse(s);
+}
+function save() { localStorage.setItem('mizan_v2', JSON.stringify(state)); }
+
+// ===== SETUP =====
+function initSetup() {
+  document.getElementById('setup').classList.add('show');
+  const cats = state.categories.length ? state.categories : DEFAULT_CATS.map(c => ({...c, budget: 0}));
+  renderCatSetup(cats);
+}
+
+function renderCatSetup(cats) {
+  const list = document.getElementById('catSetupList');
+  list.innerHTML = cats.map(c => `
+    <div class="cat-setup-row">
+      <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:0">
+        <span style="font-size:20px">${c.icon}</span>
+        <span style="font-size:12px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${c.name}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:2px;width:70px;justify-content:center">
+        <input class="cat-pct-input" type="number" id="pct_${c.id}" value="${c.pct||0}" min="0" max="100" inputmode="numeric"
+          oninput="onPctChange('${c.id}')" style="width:46px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:6px 4px;color:var(--text);font-family:'Cairo',sans-serif;font-size:13px;text-align:center;outline:none;direction:ltr">
+        <span style="font-size:11px;color:var(--text-muted)">%</span>
+      </div>
+      <div style="width:90px;text-align:center">
+        <div id="amt_${c.id}" style="font-size:13px;font-weight:700;color:var(--accent)">0 دج</div>
+      </div>
+    </div>
+  `).join('');
+  recalcAll();
+}
+
+function onSalaryChange() { recalcAll(); }
+
+function onPctChange(id) {
+  // تحقق أن النسبة لا تتجاوز 100
+  const input = document.getElementById('pct_'+id);
+  if (parseFloat(input.value) > 100) input.value = 100;
+  recalcAll();
+}
+
+function recalcAll() {
+  const salary = parseFloat(document.getElementById('salaryInput').value) || 0;
+  const cats = getCatIds();
+  let totalPct = 0;
+  let totalAmt = 0;
+
+  cats.forEach(id => {
+    const pct = parseFloat(document.getElementById('pct_'+id)?.value) || 0;
+    const amt = Math.round(salary * pct / 100);
+    totalPct += pct;
+    totalAmt += amt;
+    const amtEl = document.getElementById('amt_'+id);
+    if (amtEl) amtEl.textContent = salary ? fmt(amt)+' دج' : '—';
+  });
+
+  // مجموع النسب
+  const pctEl = document.getElementById('pctTotal');
+  const over = totalPct > 100;
+  pctEl.textContent = totalPct + '%';
+  pctEl.className = over ? 'over' : totalPct === 100 ? 'ok' : 'warn-pct';
+  pctEl.style.color = over ? 'var(--red)' : totalPct === 100 ? 'var(--green)' : 'var(--yellow)';
+
+  // المجموع
+  const totalEl = document.getElementById('setupTotal');
+  totalEl.textContent = fmt(totalAmt) + ' دج';
+  totalEl.style.color = over ? 'var(--red)' : 'var(--green)';
+
+  // غير مخصص
+  const remaining = salary - totalAmt;
+  const remBar = document.getElementById('remainingBar');
+  const remAmt = document.getElementById('remainingAmt');
+  if (salary > 0 && remaining > 0 && totalPct < 100) {
+    remBar.style.display = 'flex';
+    remAmt.textContent = fmt(remaining) + ' دج (' + (100 - totalPct) + '%)';
+  } else {
+    remBar.style.display = 'none';
+  }
+}
+
+function getCatIds() {
+  const cats = state.categories.length ? state.categories : DEFAULT_CATS;
+  return cats.map(c => c.id);
+}
+
+function finishSetup() {
+  const salary = parseFloat(document.getElementById('salaryInput').value);
+  if (!salary || salary <= 0) { showToast('أدخل الراتب أولاً', 'error'); return; }
+
+  const baseCats = state.categories.length ? state.categories : DEFAULT_CATS;
+  let totalPct = 0;
+  const cats = baseCats.map(c => {
+    const pct = parseFloat(document.getElementById('pct_'+c.id)?.value) || 0;
+    const budget = Math.round(salary * pct / 100);
+    totalPct += pct;
+    return { ...c, pct, budget };
+  });
+
+  if (totalPct > 100) { showToast('مجموع النسب يتجاوز 100%!', 'error'); return; }
+
+  state.salary = salary;
+  state.categories = cats;
+  state.setup = true;
+  save();
+  document.getElementById('setup').classList.remove('show');
+  renderAll();
+  showToast('تم الإعداد بنجاح ✓', 'success');
+}
+
+// ===== HELPERS =====
+function fmt(n) { return Number(n).toLocaleString('ar-DZ'); }
+
+function getSpent(catId) {
+  return state.transactions.filter(t => t.catId === catId).reduce((s,t) => s+t.amount, 0);
+}
+
+function getTotalSpent() { return state.transactions.reduce((s,t) => s+t.amount, 0); }
+
+function getCat(id) { return state.categories.find(c => c.id === id); }
+
+function progressColor(pct) {
+  if (pct < 60) return 'var(--green)';
+  if (pct < 85) return 'var(--yellow)';
+  return 'var(--red)';
+}
+
+function currentMonth() {
+  const now = new Date();
+  const months = ['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  return months[now.getMonth()] + ' ' + now.getFullYear();
+}
+
+// ===== RENDER HOME =====
+function renderHome() {
+  const totalSpent = getTotalSpent();
+  const remaining = state.salary - totalSpent;
+  const pct = state.salary ? Math.min(100, Math.round(totalSpent/state.salary*100)) : 0;
+
+  document.getElementById('summaryCard').innerHTML = `
+    <div class="summary-card" style="margin-bottom:20px">
+      <div class="summary-label">الراتب الشهري</div>
+      <div class="summary-amount">${fmt(state.salary)} <span class="summary-unit">دج</span></div>
+      <div style="height:6px;background:rgba(0,0,0,0.2);border-radius:99px;margin:12px 0 4px">
+        <div style="height:100%;width:${pct}%;background:rgba(255,255,255,0.4);border-radius:99px;transition:width 0.4s"></div>
+      </div>
+      <div style="font-size:11px;opacity:0.7;text-align:left">${pct}% مصروف</div>
+      <div class="summary-row">
+        <div class="summary-mini spent"><div class="label">المصروف</div><div class="val">${fmt(totalSpent)} دج</div></div>
+        <div class="summary-mini left"><div class="label">المتبقي</div><div class="val">${fmt(remaining)} دج</div></div>
+      </div>
+    </div>
+  `;
+
+  const list = document.getElementById('catList');
+  if (!state.categories.length) { list.innerHTML = ''; return; }
+
+  list.innerHTML = state.categories.map(c => {
+    const spent = getSpent(c.id);
+    const pct = c.budget ? Math.min(100, Math.round(spent/c.budget*100)) : 0;
+    const left = c.budget - spent;
+    const over = spent > c.budget && c.budget > 0;
+    return `
+      <div class="cat-card">
+        <div class="cat-header">
+          <div class="cat-icon" style="background:${c.color}22">${c.icon}</div>
+          <div class="cat-info">
+            <div class="cat-name">${c.name}</div>
+            <div class="cat-amounts">${fmt(spent)} من ${fmt(c.budget)} دج</div>
+          </div>
+          <div class="cat-left" style="color:${over ? 'var(--red)' : 'var(--green)'}">${over ? '⚠️' : fmt(left)+' دج'}</div>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width:${pct}%;background:${progressColor(pct)}"></div>
+        </div>
+        ${over ? '<div class="warn-badge">⚠️ تجاوزت الميزانية</div>' : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+// ===== RENDER TXS =====
+let activeFilter = 'all';
+
+function renderTxs() {
+  const filterRow = document.getElementById('filterRow');
+  filterRow.innerHTML = `
+    <div class="filter-chip ${activeFilter==='all'?'active':''}" onclick="setFilter('all')">الكل</div>
+    ${state.categories.map(c => `
+      <div class="filter-chip ${activeFilter===c.id?'active':''}" onclick="setFilter('${c.id}')">${c.icon} ${c.name}</div>
+    `).join('')}
+  `;
+
+  const txs = activeFilter === 'all'
+    ? state.transactions
+    : state.transactions.filter(t => t.catId === activeFilter);
+
+  const sorted = [...txs].sort((a,b) => new Date(b.date) - new Date(a.date));
+
+  const list = document.getElementById('txList');
+  if (!sorted.length) {
+    list.innerHTML = '<div class="empty"><div class="icon">📭</div><p>لا توجد مصاريف بعد</p></div>';
+    return;
+  }
+
+  list.innerHTML = sorted.map(t => {
+    const cat = getCat(t.catId);
+    return `
+      <div class="tx-item">
+        <div class="tx-icon" style="background:${cat?.color||'#333'}22">${cat?.icon||'💸'}</div>
+        <div class="tx-info">
+          <div class="tx-desc">${t.desc || cat?.name || '—'}</div>
+          <div class="tx-meta">${cat?.name} • ${t.date}</div>
+        </div>
+        <div class="tx-amount">-${fmt(t.amount)} دج</div>
+        <button class="tx-delete" onclick="deleteTx('${t.id}')">🗑</button>
+      </div>
+    `;
+  }).join('');
+}
+
+function setFilter(id) {
+  activeFilter = id;
+  renderTxs();
+}
+
+function deleteTx(id) {
+  if (!confirm('حذف هذا المصروف؟')) return;
+  state.transactions = state.transactions.filter(t => t.id !== id);
+  save();
+  renderAll();
+  showToast('تم الحذف', 'success');
+}
+
+// ===== RENDER STATS =====
+function renderStats() {
+  const totalSpent = getTotalSpent();
+  const saved = state.salary - totalSpent;
+  const html = `
+    <div class="report-card">
+      <div style="font-size:15px;font-weight:700;margin-bottom:12px">📊 ملخص ${currentMonth()}</div>
+      <div class="report-row">
+        <span>الراتب</span><span style="font-weight:700">${fmt(state.salary)} دج</span>
+      </div>
+      <div class="report-row">
+        <span>إجمالي المصروف</span><span class="spent" style="font-weight:700;color:var(--accent2)">${fmt(totalSpent)} دج</span>
+      </div>
+      <div class="report-row">
+        <span>المتبقي / الموفر</span><span style="font-weight:700;color:${saved>=0?'var(--green)':'var(--red)'}">${fmt(saved)} دج</span>
+      </div>
+    </div>
+    <div class="report-card">
+      <div style="font-size:15px;font-weight:700;margin-bottom:12px">📂 تفصيل الفئات</div>
+      ${state.categories.map(c => {
+        const spent = getSpent(c.id);
+        const over = c.budget > 0 && spent > c.budget;
+        const pct = c.budget ? Math.round(spent/c.budget*100) : 0;
+        return `
+          <div class="report-row">
+            <span class="name"><span>${c.icon}</span>${c.name}</span>
+            <span>
+              <span class="spent ${over?'warn':'ok'}">${fmt(spent)}</span>
+              <span style="color:var(--text-muted);font-size:11px"> / ${fmt(c.budget)} دج (${pct}%)</span>
+            </span>
+          </div>
+        `;
+      }).join('')}
+    </div>
+  `;
+  document.getElementById('statsContent').innerHTML = html;
+}
+
+// ===== ADD TX =====
+let selectedCat = null;
+
+function openAddTx() {
+  selectedCat = null;
+  document.getElementById('txAmount').value = '';
+  document.getElementById('txDesc').value = '';
+  document.getElementById('txDate').value = new Date().toISOString().split('T')[0];
+
+  const grid = document.getElementById('catBtns');
+  grid.innerHTML = state.categories.map(c => `
+    <div class="cat-btn" id="cb_${c.id}" onclick="selectCat('${c.id}')">
+      <span class="icon">${c.icon}</span>${c.name}
+    </div>
+  `).join('');
+
+  document.getElementById('addTxModal').classList.add('open');
+}
+
+function selectCat(id) {
+  selectedCat = id;
+  document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('selected'));
+  document.getElementById('cb_'+id)?.classList.add('selected');
+}
+
+function saveTx() {
+  if (!selectedCat) { showToast('اختر الفئة أولاً', 'error'); return; }
+  const amount = parseFloat(document.getElementById('txAmount').value);
+  if (!amount || amount <= 0) { showToast('أدخل مبلغاً صحيحاً', 'error'); return; }
+  const desc = document.getElementById('txDesc').value.trim();
+  const date = document.getElementById('txDate').value;
+
+  const cat = getCat(selectedCat);
+  const spent = getSpent(selectedCat);
+  const willExceed = cat.budget > 0 && (spent + amount) > cat.budget;
+
+  state.transactions.push({
+    id: Date.now().toString(),
+    catId: selectedCat,
+    amount,
+    desc,
+    date
+  });
+  save();
+  closeModal('addTxModal');
+  renderAll();
+  showToast(willExceed ? '⚠️ تجاوزت ميزانية '+cat.name : 'تم تسجيل المصروف ✓', willExceed ? 'error' : 'success');
+}
+
+// ===== SETTINGS =====
+function openEditSalary() {
+  document.getElementById('editSalaryInput').value = state.salary;
+  document.getElementById('editSalaryModal').classList.add('open');
+}
+
+function saveEditSalary() {
+  const v = parseFloat(document.getElementById('editSalaryInput').value);
+  if (!v || v <= 0) { showToast('أدخل قيمة صحيحة', 'error'); return; }
+  state.salary = v;
+  // إعادة حساب الميزانيات تلقائياً بنفس النسب المحفوظة
+  state.categories = state.categories.map(c => ({
+    ...c,
+    budget: Math.round(v * (c.pct || 0) / 100)
+  }));
+  save();
+  closeModal('editSalaryModal');
+  renderAll();
+  showToast('تم تحديث الراتب وإعادة حساب الميزانيات ✓', 'success');
+}
+
+function openEditCats() {
+  document.getElementById('salaryInput').value = state.salary;
+  renderCatSetup(state.categories);
+  document.getElementById('setup').classList.add('show');
+}
+
+function resetMonth() {
+  if (!confirm('سيتم حذف كل مصاريف هذا الشهر. متأكد؟')) return;
+  state.transactions = [];
+  save();
+  renderAll();
+  showToast('تم إعادة تعيين الشهر ✓', 'success');
+}
+
+function resetDefaultCats() {
+  if (!confirm('سيتم استعادة الفئات والنسب الافتراضية مع إعادة حساب الميزانيات. متأكد؟')) return;
+  state.categories = DEFAULT_CATS.map(c => ({
+    ...c,
+    budget: Math.round(state.salary * c.pct / 100)
+  }));
+  save();
+  renderAll();
+  showToast('تم استعادة الفئات الافتراضية ✓', 'success');
+}
+
+function clearAll() {
+  if (!confirm('سيتم حذف كل البيانات نهائياً. متأكد؟')) return;
+  localStorage.removeItem('mizan_v2');
+  location.reload();
+}
+
+// ===== NAVIGATION =====
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('active');
+  document.getElementById('nav-'+name).classList.add('active');
+  document.getElementById('fab').style.display = (name === 'home' || name === 'txs') ? 'flex' : 'none';
+  if (name === 'stats') renderStats();
+  if (name === 'settings') document.getElementById('currentSalaryLabel').textContent = fmt(state.salary)+' دج شهرياً';
+}
+
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+
+document.querySelectorAll('.modal-overlay').forEach(m => {
+  m.addEventListener('click', e => { if (e.target === m) m.classList.remove('open'); });
+});
+
+// ===== TOAST =====
+function showToast(msg, type='success') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast '+type+' show';
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ===== INIT =====
+function renderAll() {
+  document.getElementById('monthBadge').textContent = currentMonth();
+  renderHome();
+  renderTxs();
+}
+
+load();
+if (!state.setup) {
+  initSetup();
+} else {
+  renderAll();
+}
+
+// ===== PWA SERVICE WORKER =====
+if ('serviceWorker' in navigator) {
+  const swCode = `
+    const CACHE = 'mizan-v1';
+    self.addEventListener('install', e => {
+      e.waitUntil(caches.open(CACHE).then(c => c.addAll(['./', self.location.href])));
+      self.skipWaiting();
+    });
+    self.addEventListener('fetch', e => {
+      e.respondWith(caches.match(e.request).then(r => r || fetch(e.request).catch(() => caches.match('./'))));
+    });
+  `;
+  const blob = new Blob([swCode], {type: 'application/javascript'});
+  const swUrl = URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl).catch(() => {});
+}
+</script>
+</body>
+</html>
